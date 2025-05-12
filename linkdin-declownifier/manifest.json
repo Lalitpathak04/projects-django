@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Linkdin DeClownifier",
+    "version": "1.0",
+    "description": "Exposing fake jobs and clownery on LinkedIn.",
+    "permissions": ["activeTab", "scripting"],
+    "host_permissions": ["https://www.linkedin.com/*"],
+    "action": {
+      "default_popup": "popup/popup.html",
+      "default_icon": {
+        "16": "icons/clown.png",
+        "48": "icons/clown.png",
+        "128": "icons/clown.png"
+      }
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://www.linkedin.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  

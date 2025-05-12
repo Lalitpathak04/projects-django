@@ -1,0 +1,15 @@
+body {
+    width: 300px;
+    font-family: monospace;
+    background: #111;
+    color: #eee;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #ff4d4f;
+  }
+  
